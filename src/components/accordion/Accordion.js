@@ -6,10 +6,10 @@ import '../../global.css';
 
 /**
  * @render react
- * @name HeroButton
+ * @name Accordion
  * @description CTA button for `Hero` featured content
  * @example
- * <HeroButton text="Im a Hero!" primary />
+ * <Accordion text="Im a Hero!" primary />
  */
 
 const HeroButton = ({ text, primary }) => (

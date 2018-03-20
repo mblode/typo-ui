@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 import Accordion from './components/accordion';
+import Alert from './components/alert';
+import Avatar from './components/avatar';
+import Badge from './components/badge';
+import Breadcrumb from './components/breadcrumb';
 import Button from './components/button';
 
 import style from './App.scss';
@@ -9,17 +13,13 @@ import './global.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div class="hello">
-
-        </div>
+      <div>
+        <Accordion />
+        <Alert />
+        <Avatar />
+        <Badge />
+        <Breadcrumb />
+        <Button />
       </div>
     );
   }
