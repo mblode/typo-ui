@@ -6,19 +6,18 @@ import '../../global.css';
 
 /**
  * @render react
- * @name HeroButton
- * @description CTA button for `Hero` featured content
+ * @name Button
  * @example
- * <HeroButton text="Im a Hero!" primary />
+ * <Button text="Im a Hero!" primary />
  */
 
-const HeroButton = ({ text, primary }) => (
+const Button = ({ text, primary }) => (
   <a href="#" className={style.Button} data-primary={primary}>
     {text}
   </a>
 );
 
-HeroButton.propTypes = {
+Button.propTypes = {
   /**
    * @property {boolean} primary determines is a primary button (emphasized)
    */
@@ -30,9 +29,9 @@ HeroButton.propTypes = {
   text: PropTypes.string
 }
 
-HeroButton.defaultProps = {
+Button.defaultProps = {
   text: 'Hero Button!',
   primary: true,
 }
 
-export default HeroButton;
+export default Button;
